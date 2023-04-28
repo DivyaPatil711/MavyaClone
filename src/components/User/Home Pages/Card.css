@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap");
+ * {
+	 margin: 0;
+	 padding: 0;
+	 box-sizing: border-box;
+}
+ .card {
+	 width: 15em;
+	 height: 15em;
+	 cursor: pointer;
+	 background: #fff;
+	 position: relative;
+}
+ .card .user_img {
+	 width: 100%;
+	 height: 100%;
+	 object-fit: cover;
+}
+ .card .user_social_link {
+	 position: absolute;
+	 bottom: 10%;
+	 width: 30%;
+	 left: 20%;
+	 z-index: -1;
+	 transition: transform 150ms ease-in-out;
+}
+ .card:hover {
+	 transform: scale(1.35);
+	 transition: transform 350ms ease;
+	 animation: shake 1000ms ease-in backwards;
+}
+ .card:hover .user_social_link:nth-of-type(2) {
+	 transform: translate(250%, 50%) rotate(50deg);
+}
+ .card:hover .user_social_link:nth-of-type(3) {
+	 transform: translate(-140%, 60%) rotate(10deg);
+}
+ .card:hover .user_social_link:nth-of-type(4) {
+	 transform: translate(-30%, 100%) rotate(18deg);
+}
+ .card:hover .user_social_link:nth-of-type(5) {
+	 transform: translate(120%, 100%) rotate(25deg);
+}
+ .user_social_link:nth-of-type(2) {
+	 transition-delay: 300ms;
+}
+ .user_social_link:nth-of-type(3) {
+	 transition-delay: 450ms;
+}
+ .user_social_link:nth-of-type(4) {
+	 transition-delay: 580ms;
+}
+ .user_social_link:nth-of-type(5) {
+	 transition-delay: 620ms;
+}
+ .card:after {
+	 content: "";
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 top: 31px;
+	 left: -60px;
+	 background: none;
+	 pointer-events: none;
+	 filter: blur(20px);
+	 z-index: -10;
+	 transition: background 0.3s ease-in-out;
+}
+ .card:hover:after {
+	 background: #0e0c0c;
+}
+ @keyframes shake {
+	 0% {
+		 transform: scale(1);
+	}
+	 30% {
+		 transform: scale(1.35);
+	}
+	 45% {
+		 transform: scale(1.35) rotate(5deg);
+	}
+	 60% {
+		 transform: scale(1.35) rotate(-5deg);
+	}
+	 70% {
+		 transform: scale(1.35) rotate(2deg);
+	}
+	 80% {
+		 transform: scale(1.35) rotate(-5deg);
+	}
+	 95% {
+		 transform: scale(1.35) rotate(-2deg);
+	}
+	 100% {
+		 transform: scale(1.35);
+	}
+}
+ 

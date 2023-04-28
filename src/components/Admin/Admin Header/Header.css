@@ -1,0 +1,33 @@
+.admin-header{
+    height: 70px;
+    /* background-color: black;
+    color: #fff; */
+    background-color: rgb(12, 110, 125);
+  background-image: linear-gradient(rgb(38, 122, 132),#053845);
+  color: white;
+    display: flex;
+}
+
+.admin-header div h5{
+    padding: 20px;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.admin-header nav ul{
+    display: flex;
+}
+
+.admin-header nav ul li{
+    list-style: none;
+    padding: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.admin-header nav ul a{
+    text-decoration: none;
+}
+
+
